@@ -44,7 +44,7 @@ class ComicController extends Controller
 
         $newComic->save();
 
-        return redirect('Comic.index');
+        return redirect('Comic');
     }
 
     /**
