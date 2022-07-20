@@ -6,7 +6,7 @@
 
 @section('home_page')
     <h1>Inserire un fumetto</h1>
-    <form action="{{route('Comic.store')}}" method="post">
+    <form action="{{route('comics.store')}}" method="post">
         @csrf
 
         <label for="title">Titolo</label>

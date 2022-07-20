@@ -18,11 +18,11 @@
                     <p>{{$comic->series}}</p>
                     <p>{{$comic->sale_date}}</p>
 
-                    <a href="{{route('Comic.edit', $comic->id)}}">Modifica</a>
-                    <form action="{{route('Comic.destroy', $comic->id)}}" method="POST">
+                    <a href="{{route('comics.edit', $comic->id)}}">Modifica</a>
+                    <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button>Cancella</button>
+                        <button type="submit">Cancella</button>
                     </form>
                 </li>
             @endforeach

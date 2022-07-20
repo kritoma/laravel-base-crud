@@ -6,7 +6,7 @@
 
 @section('home_page')
     <h1>Modifica il fumetto</h1>
-    <form action="{{route('Comic.update', $comic->id )}}" method="POST">
+    <form action="{{route('comics.update', $comic->id )}}" method="POST">
         @csrf
         @method('PUT')
 
